@@ -1,0 +1,28 @@
+[package]
+name = "taller1"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+num-format = "0.4.4"
+num_cpus = "1.17.0"
+
+[profile.dev]
+opt-level = 0
+debug = true
+incremental = true
+codegen-units = 256
+panic = "unwind"
+overflow-checks = true
+lto = false
+
+[profile.release]
+opt-level = 3
+debug = false
+incremental = false
+codegen-units = 1
+panic = "abort"
+overflow-checks = false
+lto = true
