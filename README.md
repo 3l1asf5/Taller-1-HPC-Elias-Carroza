@@ -1,4 +1,4 @@
-#Taller 1 HPC - Sudoku solver
+# Taller 1 HPC - Sudoku solver
 
 ## Descripción
 Programa que completa y mide el tiempo de resolución de un sudoku mediante paralelización
