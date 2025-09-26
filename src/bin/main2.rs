@@ -14,7 +14,10 @@ fn main() {
         [0,0,8,5,0,0,0,1,0],
         [0,9,0,0,0,0,4,0,0]
     ];
-    let num_threads: usize = num_cpus::get();
+
+    //Modificar para distintos valores de k
+    let num_threads: usize = num_cpus::get();//num_cpus::get();
+    println!("Resutados para {} hilos: ", num_threads);
 
     // divide las columas para cada hilo
     let column_assignments = assign_rows(matrix.len(), num_threads);
